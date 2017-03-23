@@ -1,0 +1,32 @@
+{
+  "name": "Rahul Resume",
+  "version": "1.0.1",
+  "description": "Resume",
+  "scripts": {
+    "build:js": "buble src/resume.js | uglifyjs > resume.min.js",
+    "build:css": "cssmin src/resume.css > resume.min.css",
+    "build": "npm run build:js && npm run build:css",
+    "test": "standard src/resume.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rahulkr204/Resume"
+  },
+  "author": "Rahul Kumar <write.rahulk@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rrdelaney/material-resume/issues"
+  },
+  "homepage": "https://github.com/Rahulkr204",
+  "devDependencies": {
+    "buble": "^0.14.0",
+    "cssmin": "^0.4.3",
+    "standard": "^8.6.0",
+    "uglify-js": "^2.7.3"
+  },
+  "standard": {
+    "global": [
+      "angular"
+    ]
+  }
+}
